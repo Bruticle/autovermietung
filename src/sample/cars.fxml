@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="782.0" style="-fx-background-color: #EDE7DC#EDE7DC #EDE7DC#EDE7DC;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.carsController">
+   <children>
+      <VBox prefHeight="505.0" prefWidth="206.0" style="-fx-background-color: #B0D2DA#B0D2DA #B0D2DA#B0D2DA;">
+         <children>
+            <Pane prefHeight="145.0" prefWidth="183.0" style="-fx-background-color: #B0D2DA#B0D2DA #B0D2DA#B0D2DA;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="151.0" layoutX="31.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/5a2ae879db68181c8f184d72.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button fx:id="homepageButton" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#switchToHomepages" prefHeight="36.0" prefWidth="192.0" style="-fx-background-color: #B0D2DA#B0D2DA #B0D2DA#B0D2DA;" text="Homepage" textFill="#0a0a0a">
+               <padding>
+                  <Insets bottom="3.0" left="10.0" />
+               </padding>
+               <font>
+                  <Font name="AppleGothic Regular" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/25694.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Line endX="20.0" startX="204.95909118652344" stroke="#a1efff8f">
+               <VBox.margin>
+                  <Insets left="7.0" />
+               </VBox.margin>
+            </Line>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa84a" height="39.0" stroke="#ede7dc" strokeType="INSIDE" width="13.0">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Rectangle>
+            <Button fx:id="carsButton" alignment="BOTTOM_LEFT" mnemonicParsing="false" prefHeight="36.0" prefWidth="192.0" style="-fx-background-color: #B0D2DA#B0D2DA #B0D2DA#B0D2DA;" text="Cars" textFill="#0a0a0a">
+               <padding>
+                  <Insets bottom="3.0" left="10.0" />
+               </padding>
+               <font>
+                  <Font name="AppleGothic Regular" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/89102.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="25.0" top="-39.0" />
+               </VBox.margin>
+            </Button>
+            <Line endX="20.0" startX="204.95909118652344" stroke="#a1efff8f">
+               <VBox.margin>
+                  <Insets left="7.0" />
+               </VBox.margin>
+            </Line>
+            <Button fx:id="customersButton" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#switchToCustomers" prefHeight="36.0" prefWidth="192.0" style="-fx-background-color: #B0D2DA#B0D2DA #B0D2DA#B0D2DA;" text="Customers" textFill="#0a0a0a">
+               <padding>
+                  <Insets bottom="3.0" left="10.0" />
+               </padding>
+               <font>
+                  <Font name="AppleGothic Regular" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/46993.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Line endX="20.0" startX="204.95909118652344" stroke="#a1efff8f">
+               <VBox.margin>
+                  <Insets left="7.0" />
+               </VBox.margin>
+            </Line>
+            <Button fx:id="leasesButton" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#switchToLeases" prefHeight="36.0" prefWidth="192.0" style="-fx-background-color: #B0D2DA#B0D2DA #B0D2DA#B0D2DA;" text=" Leases" textFill="#0a0a0a">
+               <padding>
+                  <Insets bottom="3.0" left="10.0" />
+               </padding>
+               <font>
+                  <Font name="AppleGothic Regular" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/3188517.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Line endX="20.0" startX="204.95909118652344" stroke="#a1efff8f">
+               <VBox.margin>
+                  <Insets left="7.0" />
+               </VBox.margin>
+            </Line>
+            <Button fx:id="employeesButton" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#switchToEmployees" prefHeight="36.0" prefWidth="192.0" style="-fx-background-color: #B0D2DA#B0D2DA;" text="Employees" textFill="#0a0a0a">
+               <padding>
+                  <Insets bottom="3.0" left="10.0" />
+               </padding>
+               <font>
+                  <Font name="AppleGothic Regular" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/6462992.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Line endX="20.0" startX="204.95909118652344" stroke="#a1efff8f">
+               <VBox.margin>
+                  <Insets left="7.0" />
+               </VBox.margin>
+            </Line>
+            <Button fx:id="settingsButton" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#switchToSettings" prefHeight="36.0" prefWidth="192.0" style="-fx-background-color: #B0D2DA#B0D2DA #B0D2DA#B0D2DA;" text="Settings" textFill="#0a0a0a">
+               <padding>
+                  <Insets bottom="3.0" left="10.0" />
+               </padding>
+               <font>
+                  <Font name="AppleGothic Regular" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/503849.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Line endX="20.0" startX="204.95909118652344" stroke="#a1efff8f">
+               <VBox.margin>
+                  <Insets left="7.0" />
+               </VBox.margin>
+            </Line>
+            <Button fx:id="settingsButton1" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#switchToLogout" prefHeight="36.0" prefWidth="192.0" style="-fx-background-color: #B0D2DA#B0D2DA #B0D2DA#B0D2DA;" text="Logout" textFill="#0a0a0a">
+               <padding>
+                  <Insets bottom="3.0" left="10.0" />
+               </padding>
+               <font>
+                  <Font name="AppleGothic Regular" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/660350.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="carsButton1" alignment="BOTTOM_LEFT" layoutX="212.0" layoutY="23.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="197.0" style="-fx-background-color: #EDE7DC#EDE7DC #EDE7DC#EDE7DC #EDE7DC#EDE7DC #EDE7DC#EDE7DC;" text="Cars" textFill="#0a0a0a">
+         <padding>
+            <Insets bottom="3.0" left="10.0" />
+         </padding>
+         <font>
+            <Font name="AppleGothic Regular" size="30.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/89102.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="newButton" layoutX="709.0" layoutY="107.0" mnemonicParsing="false" onAction="#switchtoAddDialog" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA;" text="New" textFill="#0a0a0a">
+         <font>
+            <Font name="AppleGothic Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="editButton" layoutX="709.0" layoutY="143.0" mnemonicParsing="false" onAction="#switchtoEditDialog" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA;" text="Edit " textFill="#0a0a0a">
+         <font>
+            <Font name="AppleGothic Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteButton" layoutX="709.0" layoutY="179.0" mnemonicParsing="false" onAction="#deleteCar" style="-fx-background-color: #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA;" text="Delete" textFill="#0a0a0a">
+         <font>
+            <Font name="AppleGothic Regular" size="13.0" />
+         </font>
+      </Button>
+      <TreeView fx:id="treeView" layoutX="224.0" layoutY="167.0" prefHeight="288.0" prefWidth="470.0" style="-fx-font-size: 14;" />
+      <Slider fx:id="mySlider" blockIncrement="2.0" layoutX="378.0" layoutY="109.0" majorTickUnit="2.0" max="10.0" minorTickCount="0" prefHeight="38.0" prefWidth="295.0" showTickMarks="true" snapToTicks="true" value="4.0" />
+      <Label layoutX="224.0" layoutY="98.0" prefHeight="47.0" prefWidth="197.0" text="Price Range:" textFill="#0a0a0a">
+         <font>
+            <Font name="AppleGothic Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="364.0" layoutY="139.0" text="0-1.99" textFill="#0a0a0a">
+         <font>
+            <Font name="AppleGothic Regular" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="594.0" layoutY="139.0" text="8-9.99" textFill="#0a0a0a">
+         <font>
+            <Font name="AppleGothic Regular" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="539.0" layoutY="139.0" text="6-7.99" textFill="#0a0a0a">
+         <font>
+            <Font name="AppleGothic Regular" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="482.0" layoutY="139.0" text="4-5.99" textFill="#0a0a0a">
+         <font>
+            <Font name="AppleGothic Regular" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="139.0" text="2-3.99" textFill="#0a0a0a">
+         <font>
+            <Font name="AppleGothic Regular" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="646.0" layoutY="139.0" text="10+" textFill="#0a0a0a">
+         <font>
+            <Font name="AppleGothic Regular" size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="newButton1" layoutX="676.0" layoutY="33.0" mnemonicParsing="false" onAction="#refreshTreeView" prefHeight="26.0" prefWidth="85.0" style="-fx-background-color: #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA;" text="Refresh" textFill="#0a0a0a">
+         <font>
+            <Font name="AppleGothic Regular" size="13.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="available" layoutX="345.0" layoutY="81.0" mnemonicParsing="false" />
+      <Label layoutX="224.0" layoutY="71.0" text="Available:" textFill="#0a0a0a">
+         <font>
+            <Font name="AppleGothic Regular" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

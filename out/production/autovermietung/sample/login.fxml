@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="782.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <center>
+      <AnchorPane prefHeight="410.0" prefWidth="651.0" style="-fx-background-color: #EDE7DC#EDE7DC #EDE7DC#EDE7DC;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="loginButton" layoutX="322.0" layoutY="407.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="138.0" style="-fx-background-color: #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA #B0D2DA#B0D2DA; -fx-background-radius: 20px;" text="Login" textFill="#0a0a0a" AnchorPane.leftAnchor="322.0" AnchorPane.rightAnchor="322.0">
+               <font>
+                  <Font name="AppleGothic Regular" size="31.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="passwordTextfield" alignment="CENTER" layoutX="302.0" layoutY="306.0" prefHeight="23.0" prefWidth="177.0" promptText="password" style="-fx-background-radius: 20px;" AnchorPane.leftAnchor="302.0" AnchorPane.rightAnchor="304.0">
+               <tooltip>
+                  <Tooltip fx:id="tooltip" contentDisplay="RIGHT" text="Empty Tooltip" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip>
+               <font>
+                  <Font size="24.0" />
+               </font></PasswordField>
+            <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="207.0" layoutY="358.0" prefHeight="39.0" prefWidth="369.0" textFill="#0a0a0a" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="206.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="showPassword" layoutX="508.0" layoutY="310.0" mnemonicParsing="false" onAction="#showPassword" prefHeight="35.0" prefWidth="165.0" text="Show/Hide Password">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <ImageView fitHeight="231.0" fitWidth="229.0" layoutX="277.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="276.0">
+               <image>
+                  <Image url="@image/5a2ae879db68181c8f184d72.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="usernameTextfield" alignment="CENTER" layoutX="302.0" layoutY="255.0" prefHeight="23.0" prefWidth="177.0" promptText="username" style="-fx-background-radius: 20px;" AnchorPane.leftAnchor="302.0" AnchorPane.rightAnchor="303.0">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
